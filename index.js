@@ -34,9 +34,9 @@ let USERS = [];
 
 // Load user data from a file at startup
 try {
-  const userData = fs.readFileSync("users.json");
-  const ques = fs.readFileSync("questions.json");
-  const sub = fs.readFileSync("submissions.json");
+  const userData = fs.readFileSync("data/users.json");
+  const ques = fs.readFileSync("data/questions.json");
+  const sub = fs.readFileSync("data/submissions.json");
   USERS = JSON.parse(userData);
   QUESTIONS = JSON.parse(ques);
   SUBMISSIONS = JSON.parse(sub);
