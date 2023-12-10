@@ -1,0 +1,14 @@
+# Dependency directories
+/node_modules
+
+# OS or Editor specific files
+.DS_Store
+.vscode
+*.log
+
+# Environment variables or secrets
+.env
+
+# Build output
+/build
+/dist
