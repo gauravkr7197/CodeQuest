@@ -2,6 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import './Components/LoginSignup/LoginSignup'
+import LoginSignup from "./Components/LoginSignup/LoginSignup";
 
 function App() {
   const problems1 = [
@@ -43,24 +45,27 @@ function App() {
   const [problems,setProblems] = useState([])
 
   return (
+    // <div>
+    //   <input type="text" placeholder="email" />
+    //   <input type="text" placeholder="password" />
+    //   <button>Sign in</button>
+    //   <br />
+    //   <div>
+    //     <button onClick={()=>{setProblems(problems=>problems1)}}>1</button>
+    //     <button onClick={()=>{setProblems(problems=>problems2)}}>2</button>
+    //   </div>
+    //   <div>
+    //     {problems.map(problem => (
+    //       <ProblemStatement
+    //         title={problem.title}
+    //         acceptance={problem.acceptance}
+    //         difficulty={problem.difficulty}
+    //       />
+    //     ))}
+    //   </div>
+    // </div>
     <div>
-      <input type="text" placeholder="email" />
-      <input type="text" placeholder="password" />
-      <button>Sign in</button>
-      <br />
-      <div>
-        <button onClick={()=>{setProblems(problems=>problems1)}}>1</button>
-        <button onClick={()=>{setProblems(problems=>problems2)}}>2</button>
-      </div>
-      <div>
-        {problems.map(problem => (
-          <ProblemStatement
-            title={problem.title}
-            acceptance={problem.acceptance}
-            difficulty={problem.difficulty}
-          />
-        ))}
-      </div>
+      <LoginSignup/>
     </div>
   );
 }

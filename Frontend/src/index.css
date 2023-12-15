@@ -25,9 +25,11 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* place-items: center; */
+  /* min-width: 320px;
+  min-height: 100vh; */
+  height: 100vh;
+  background: linear-gradient(#2A00B7,#42006C);
 }
 
 h1 {
